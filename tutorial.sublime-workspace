@@ -1,0 +1,1788 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"v",
+				"var  (variable)"
+			],
+			[
+				"Response",
+				"Symfony\\Component\\HttpFoundation\\ResponseHeaderBag  (class)"
+			],
+			[
+				"font",
+				"font-style"
+			],
+			[
+				"create",
+				"createClient"
+			],
+			[
+				"na",
+				"name"
+			],
+			[
+				"paren",
+				"parentIdProp"
+			],
+			[
+				"par",
+				"parentId"
+			],
+			[
+				"pare",
+				"parentIdProp"
+			],
+			[
+				"webkit-tr",
+				"-webkit-transition:   (property)"
+			],
+			[
+				"roo",
+				"rootScope	\\$rootScope"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"Coo",
+				"coordinates"
+			],
+			[
+				"c",
+				"callback"
+			],
+			[
+				"p",
+				"p3"
+			],
+			[
+				"l",
+				"Library  (class)"
+			],
+			[
+				"sa",
+				"sans-serif"
+			],
+			[
+				"fon-",
+				"font-family"
+			],
+			[
+				"image",
+				"imageData"
+			],
+			[
+				"getC",
+				"getImage  (function)"
+			],
+			[
+				"st",
+				"status"
+			],
+			[
+				"Class",
+				"ClassMetadataFactory  (namespace)"
+			],
+			[
+				"inp",
+				"input_file"
+			],
+			[
+				"ta",
+				"currentTarget  (variable)"
+			],
+			[
+				"cl",
+				"clear"
+			],
+			[
+				"re",
+				"relative"
+			],
+			[
+				"f",
+				":first-child"
+			],
+			[
+				"tex",
+				"text-indent"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"boo",
+				"bootstrap"
+			],
+			[
+				"ve",
+				"vendor"
+			],
+			[
+				"__",
+				"__prop	__prop"
+			],
+			[
+				"usern",
+				"userNonExpired"
+			],
+			[
+				"my",
+				"myBase"
+			],
+			[
+				"mongo",
+				"mongoDataAccessLayer"
+			],
+			[
+				"co",
+				"confirmDelete"
+			],
+			[
+				"cou",
+				"couchdb"
+			],
+			[
+				"dr",
+				"drawTextOverlay"
+			],
+			[
+				"up",
+				"updateGameState"
+			],
+			[
+				"ch",
+				"checkHits"
+			],
+			[
+				"la",
+				"layouts"
+			],
+			[
+				"po",
+				"position"
+			],
+			[
+				"point",
+				"pointLights"
+			],
+			[
+				"Vir",
+				"VirtualHost"
+			],
+			[
+				"VI",
+				"VIEWPORT_HEIGHT"
+			],
+			[
+				"lao",
+				"layout"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "DEVNOTES.md",
+			"settings":
+			{
+				"buffer_size": 96,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/Acme/HelloBundle/Resources/views/Hi/index.html.twig",
+			"settings":
+			{
+				"buffer_size": 162,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/AppKernel.php",
+			"settings":
+			{
+				"buffer_size": 1621,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/Acme/TestBundle/Controller/TestController.php",
+			"settings":
+			{
+				"buffer_size": 1073,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/Acme/TestBundle/Resources/config/routing.yml",
+			"settings":
+			{
+				"buffer_size": 768,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 60.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"html",
+				"Tidy HTML"
+			],
+			[
+				"mark",
+				"Markdown Preview: preview in Browser"
+			],
+			[
+				"pre",
+				"Preview"
+			],
+			[
+				"fetch",
+				"Fetch: Package"
+			],
+			[
+				"color",
+				"Color picker"
+			],
+			[
+				"fe",
+				"Fetch: Manage"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"reove",
+				"Package Control: Remove Package"
+			],
+			[
+				"linter",
+				"SublimeCodeIntel: Reset"
+			],
+			[
+				"prefix",
+				"Preferences: Prefixr Key Bindings – Default"
+			],
+			[
+				"",
+				"Markdown Preview: open Markdown Cheat sheet"
+			],
+			[
+				"intel",
+				"SublimeLinter: Show Error List"
+			],
+			[
+				"show",
+				"SublimeLinter: Show Error List"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"reov",
+				"Package Control: Remove Package"
+			],
+			[
+				"for",
+				"Format: Javascript"
+			],
+			[
+				"json",
+				"Pretty JSON: Reformat (Pretty Print) JSON"
+			],
+			[
+				"Snippet: ",
+				"Snippet: __mit"
+			],
+			[
+				"fet",
+				"Fetch: File"
+			],
+			[
+				"mar",
+				"Markdown Preview: preview in Browser"
+			],
+			[
+				"makr",
+				"Markdown Preview: preview in Browser"
+			],
+			[
+				"preview",
+				"Preview"
+			],
+			[
+				"prev",
+				"Preview"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"codein",
+				"SublimeCodeIntel: Disable Plugin"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"pytho",
+				"User: Python PEP8 Autoformat"
+			],
+			[
+				"dja",
+				"Django DocsSearch"
+			],
+			[
+				"stack",
+				"Stackoverflow: Search from Input"
+			],
+			[
+				"pretty",
+				"Pretty JSON: Reformat (Pretty Print) JSON"
+			],
+			[
+				"view",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"md",
+				"Markdown Preview: preview in Browser"
+			],
+			[
+				"tw",
+				"Set Syntax: HTML (Twig)"
+			],
+			[
+				"twig",
+				"Set Syntax: HTML (Twig)"
+			],
+			[
+				"ds",
+				"Coffee: Display JavaScript"
+			],
+			[
+				"display",
+				"Coffee: Display JavaScript"
+			],
+			[
+				"coffee",
+				"Coffee: Display JavaScript"
+			],
+			[
+				"mdp",
+				"Markdown Preview: preview in Browser"
+			],
+			[
+				"markdo",
+				"Markdown Preview: preview in Browser"
+			],
+			[
+				"doc",
+				"Goto Documentation"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"zen",
+				"Zen Coding: Wrap zen as you type"
+			],
+			[
+				"codei",
+				"SublimeCodeIntel: Disable Plugin"
+			],
+			[
+				"bro",
+				"Preferences: Browse Packages"
+			],
+			[
+				"fetc",
+				"Fetch: Manage remote files"
+			],
+			[
+				"wra",
+				"HTML: Wrap Selection With Tag"
+			],
+			[
+				"fech",
+				"Fetch: Manage remote files"
+			],
+			[
+				"g",
+				"Goto Documentation"
+			],
+			[
+				"date",
+				"Snippet: input - date"
+			],
+			[
+				"do",
+				"Goto Documentation"
+			],
+			[
+				"PHPUnit: ",
+				"PHPUnit: Run Using This XML File"
+			],
+			[
+				"rei",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"diff",
+				"FileDiffs: Menu"
+			],
+			[
+				"code",
+				"SublimeCodeIntel: Disable Plugin"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reid",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"lint",
+				"SublimeLinter: Show Error List"
+			],
+			[
+				"indent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"codeintel",
+				"SublimeCodeIntel: Disable Live Autocompletion"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: re",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"PHP Code Sniffer: ",
+				"PHP Code Sniffer: Sniff this file"
+			],
+			[
+				"Package Control:ins",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 334.0
+	},
+	"console":
+	{
+		"height": 141.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": true,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/projects/categories/symfony/tutorial/app/cache/dev/classes.php",
+		"/C/projects/categories/symfony/tutorial/src/Acme/TestBundle/Resources/config/routing.yml",
+		"/C/projects/categories/symfony/tutorial/src/Acme/HelloBundle/Controller/HiController.php",
+		"/C/projects/categories/symfony/tutorial/app/config/routing.yml",
+		"/C/projects/categories/symfony/tutorial/src/Acme/TestBundle/Resources/config/config.yml",
+		"/C/projects/categories/symfony/tutorial/src/Acme/TestBundle/AcmeTestBundle.php",
+		"/C/projects/categories/symfony/tutorial/src/Acme/HelloBundle/Resources/config/routing.yml",
+		"/c/projects/categories/silex/ribbit/console",
+		"/C/projects/categories/silex/ribbit/src/Ribbit/Controllers/RibbitController.php",
+		"/c/projects/categories/silex/ribbit/web/.htaccess",
+		"/c/projects/categories/silex/ribbit/src/app.php",
+		"/c/projects/categories/silex/ribbit/.gitignore",
+		"/c/projects/categories/silex/ribbit/src/templates/layout.twig",
+		"/c/projects/categories/silex/ribbit/src/Ribbit/BusinessLogicLayer/RibbitManager.php",
+		"/c/projects/categories/silex/ribbit/README.md",
+		"/c/projects/categories/silex/ribbit/src/templates/admin_menu.twig",
+		"/c/projects/categories/silex/ribbit/src/Ribbit/Controllers/AdminController.php",
+		"/C/projects/categories/silex/ribbit/src/templates/admin_profile.twig",
+		"/c/projects/categories/silex/ribbit/src/Ribbit/Entity/User.php",
+		"/c/projects/categories/silex/ribbit/src/Ribbit/BusinessLogicLayer/UserManager.php",
+		"/c/projects/categories/silex/ribbit/src/console.php",
+		"/c/projects/categories/silex/ribbit/vendor/symfony/console/Symfony/Component/Console/Input/InputOption.php",
+		"/C/projects/categories/silex/ribbit/src/templates/admin.twig",
+		"/c/projects/categories/silex/ribbit/src/Ribbit/DataAccessLayer/DoctrineUserProvider.php",
+		"/c/projects/categories/silex/ribbit/src/Ribbit/DataAccessLayer/IUserProvider.php",
+		"/c/projects/categories/silex/ribbit/vendor/silex/silex/src/Silex/Provider/DoctrineServiceProvider.php",
+		"/c/projects/categories/silex/ribbit/web/index.php",
+		"/c/projects/categories/silex/ribbit/web/index_dev.php",
+		"/c/projects/categories/silex/ribbit/tests/setup.php",
+		"/c/projects/categories/silex/ribbit/src/Ribbit/Services/Provider/DoctrineORMServiceProvider.php",
+		"/c/projects/categories/silex/ribbit/log/silex.log",
+		"/c/projects/categories/silex/ribbit/vendor/symfony/monolog-bridge/Symfony/Bridge/Monolog/Logger.php",
+		"/c/projects/categories/silex/ribbit/vendor/monolog/monolog/src/Monolog/Logger.php",
+		"/c/projects/categories/silex/ribbit/src/Ribbit/Controllers/Admin/RibbitAdminController.php",
+		"/c/projects/categories/silex/ribbit/web/php_errors.log",
+		"/c/projects/categories/silex/ribbit/src/templates/admin/users/profile.twig",
+		"/c/projects/categories/silex/ribbit/src/templates/ribbits_admin_create.twig",
+		"/C/projects/categories/silex/ribbit/src/templates/ribbits_admin_list.twig",
+		"/c/projects/categories/silex/ribbit/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php",
+		"/c/projects/categories/silex/ribbit/src/Ribbit/Controllers/UserController.php",
+		"/c/projects/categories/silex/ribbit/src/Ribbit/Controllers/Admin/UserAdminController.php",
+		"/c/projects/categories/silex/ribbit/src/templates/admin/users/admin_menu.twig",
+		"/C/projects/categories/silex/ribbit/src/templates/admin/ribbits.twig",
+		"/C/projects/categories/silex/ribbit/src/templates/ribbit_admin_create.twig",
+		"/c/projects/categories/silex/ribbit/src/Ribbit/Controllers/IndexController.php",
+		"/c/projects/categories/silex/ribbit/src/templates/home.twig",
+		"/c/projects/categories/silex/ribbit/src/templates/../admin_menu.twig",
+		"/C/projects/categories/silex/ribbit/src/Ribbit/Entity/Ribbit.php",
+		"/C/projects/categories/silex/ribbit/src/Ribbit/DataAccessLayer/IRibbitProvider.php",
+		"/C/projects/categories/silex/ribbit/src/Ribbit/DataAccessLayer/DoctrineRibbitProvider.php",
+		"/c/projects/categories/silex/ribbit/tests/Ribbit/DaTaAccessLayer/DoctrineRibbitProviderTest.php",
+		"/c/projects/categories/silex/ribbit/vendor/silex/silex/src/Silex/Application.php",
+		"/c/projects/categories/silex/ribbit/vendor/symfony/security/Symfony/Component/Security/Core/SecurityContext.php",
+		"/C/projects/categories/silex/ribbit/src/Ribbit/Controllers/Admin/UserAdminController.php",
+		"/c/projects/categories/silex/ribbit/src/templates/users/login.twig",
+		"/c/projects/categories/silex/ribbit/src/templates/forms/register.twig",
+		"/c/projects/categories/silex/ribbit/src/Ribbit/Entity/Role.php",
+		"/c/projects/categories/silex/ribbit/src/Ribbit/Forms/RegisterType.php",
+		"/c/projects/categories/silex/ribbit/src/Ribbit/BusinessLogicLayer/RoleManager.php",
+		"/c/projects/categories/silex/ribbit/src/Ribbit/DataAccessLayer/DoctrineRoleProvider.php",
+		"/C/projects/categories/silex/ribbit/src/Ribbit/BusinessLogicLayer/RoleManager.php",
+		"/C/projects/categories/silex/ribbit/src/Ribbit/DataAccessLayer/DoctrineRoleProvider.php",
+		"/C/projects/categories/silex/ribbit/src/Ribbit/DataAccessLayer/IRoleProvider.php",
+		"/c/projects/categories/silex/ribbit/vendor/silex/silex/src/Silex/Provider/SecurityServiceProvider.php",
+		"/c/projects/categories/silex/ribbit/vendor/symfony/security/Symfony/Component/Security/Core/Authentication/Token/TokenInterface.php",
+		"/c/projects/categories/silex/ribbit/vendor/symfony/security/Symfony/Component/Security/Core/Encoder/EncoderFactory.php",
+		"/c/projects/categories/silex/ribbit/vendor/symfony/security/Symfony/Component/Security/Core/Encoder/PasswordEncoderInterface.php",
+		"/c/projects/categories/silex/ribbit/vendor/symfony/form/Symfony/Component/Form/FormError.php",
+		"/c/projects/categories/silex/ribbit/vendor/symfony/form/Symfony/Component/Form/Form.php",
+		"/C/Users/mark prades/AppData/Roaming/Sublime Text 2/Packages/SublimeCodeIntel/Default (Windows).sublime-keymap",
+		"/C/Users/mark prades/AppData/Roaming/Sublime Text 2/Packages/SublimeCodeIntel/Base File.sublime-settings",
+		"/c/projects/categories/silex/ribbit/web/info.php",
+		"/C/projects/categories/silex/ribbit/log/.gitkeep",
+		"/c/projects/categories/silex/ribbit/cache/__CG__RibbitEntityUser.php",
+		"/c/projects/categories/silex/ribbit/src/Ribbit/ServiceProvider/DoctrineORMServiceProvider.php",
+		"/c/projects/categories/silex/ribbit/src/Ribbit/Services/Providers/DoctrineORMServiceProvider.php",
+		"/C/projects/categories/silex/ribbit/src/Ribbit/Services/Providers/DoctrineORMServiceProvider.php",
+		"/c/projects/categories/silex/ribbit/tests/bootstrap.php",
+		"/C/projects/categories/silex/ribbit/templates/forms/register.twig",
+		"/C/projects/categories/silex/ribbit/templates/users/register.twig",
+		"/c/projects/categories/silex/ribbit/templates/home.twig",
+		"/c/projects/categories/silex/ribbit/src/Ribbit/Services/SQLLogger/MonologSQLLogger.php",
+		"/c/projects/categories/silex/ribbit/web/style.less",
+		"/c/projects/categories/silex/ribbit/web/less.js",
+		"/c/projects/categories/silex/ribbit/src/Ribbit/MonologSQLLogger.php",
+		"/c/projects/categories/silex/ribbit/tests/Ribbit/DaTaAccessLayer/DoctrineUserProviderTest.php",
+		"/C/Program Files/PHP/php.ini",
+		"/C/Users/mark prades/AppData/Local/Temp/etilqs_6jrn8exoY9fhylj",
+		"/C/Users/mark prades/AppData/Local/Temp/FXSAPIDebugLogFile.txt",
+		"/C/Users/mark prades/AppData/Local/Temp/git_shell_ext_debug.txt",
+		"/c/projects/categories/silex/ribbit/src/services.php",
+		"/C/projects/categories/silex/ribbit/vendor/doctrine/dbal/lib/Doctrine/DBAL/Types/DateTimeType.php",
+		"/C/projects/categories/silex/ribbit/console.bat",
+		"/c/projects/categories/silex/ribbit/config/dev.php",
+		"/c/projects/categories/silex/ribbit/.env.php",
+		"/c/projects/categories/silex/ribbit/src/Ribbit/Entities/Role.php",
+		"/c/projects/categories/silex/ribbit/src/Ribbit/Entities/User.php",
+		"/c/projects/categories/silex/ribbit/vendor/symfony/console/Symfony/Component/Console/Application.php",
+		"/c/projects/categories/silex/ribbit/nbproject/private/private.properties",
+		"/C/projects/categories/silex/ribbit/src/Ribbit/Entities/Role.php",
+		"/C/projects/categories/silex/ribbit/web/buddies.html",
+		"/C/projects/categories/silex/ribbit/phpunit.xml.dist",
+		"/C/projects/categories/silex/ribbit/src/config.php",
+		"/c/projects/categories/silex/markme/www/static/css/style.css",
+		"/c/projects/categories/silex/markme/App/DataAccessLayer/BookmarkProvider.php",
+		"/c/projects/categories/silex/markme/www/static/js/app/partials/bookmark-edit-form.html",
+		"/c/projects/categories/silex/markme/www/static/js/app/modules/ApplicationDirectives.js",
+		"/c/projects/categories/silex/markme/App/Views/application.twig",
+		"/c/projects/categories/silex/markme/tests/App/BusinessLogicLayer/BookmarkManagerTest.php",
+		"/c/projects/categories/silex/markme/App/BusinessLogicLayer/BookmarkManager.php",
+		"/c/projects/categories/silex/markme/App/Controller/BookmarkController.php",
+		"/c/projects/categories/silex/markme/App/application.php",
+		"/C/projects/categories/silex/markme/App/Views/common/flash-messages.twig",
+		"/c/projects/categories/silex/markme/log/access.log",
+		"/c/projects/categories/silex/markme/www/static/js/app/partials/account.html",
+		"/c/projects/categories/silex/markme/www/.htaccess",
+		"/c/projects/categories/silex/markme/upload/7324c2df3b45d5c90352e89c435c3d35",
+		"/c/projects/categories/silex/markme/tests/bootstrap.php",
+		"/C/Users/mark prades/Desktop/bookmarks.html",
+		"/c/projects/categories/silex/markme/tests/App/BusinessLogicLayer/files/bookmarks.html",
+		"/C/Program Files/PHP/PEAR/PHPUnit/Framework/Assert.php",
+		"/c/projects/categories/silex/markme/Database/schema.sql",
+		"/c/projects/categories/silex/markme/App/BusinessLogicLayer/UserManager.php",
+		"/c/projects/categories/silex/markme/App/Controller/UserController.php",
+		"/c/projects/categories/silex/markme/tests/App/BusinessLogicLayer/UserManagerTest.php",
+		"/c/projects/categories/silex/markme/App/DataAccessLayer/IUserProvider.php",
+		"/c/projects/categories/silex/markme/App/DataAccessLayer/UserProvider.php",
+		"/c/projects/categories/silex/markme/tests/App/DataAccessLayer/UserProviderTest.php"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"c:\\projects\\categories\\django",
+			"c:\\Users\\mark prades\\Documents\\www\\projects",
+			"c:\\Users\\mark prades\\Documents\\www\\projects\\mpmedia.alwaysdata.net-silexblog",
+			"c:\\Users\\mark prades\\Documents\\www\\projects\\mongoblog.phpfogapp.com\\app\\view"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"ribbits.twig",
+			"interface",
+			"formRegister",
+			".right",
+			"form",
+			"temp",
+			"<?",
+			"SetEnv(.*)",
+			";}",
+			"()",
+			"get",
+			"return",
+			";}",
+			"()",
+			"get",
+			"2",
+			"affected_",
+			"status",
+			"getstatus",
+			"controllers",
+			"console",
+			" ({",
+			"echo",
+			"sqlparserutils",
+			"sqlparse",
+			"AUTO_INCREMENT",
+			"8000",
+			"port",
+			"m",
+			"-m",
+			"null",
+			"(console.log.*)",
+			"spell",
+			"sublime.",
+			"INPUT_METHOD_",
+			"INPUT_METHOD_TEMP_FILE",
+			"INPUT_METHOD_STDIN",
+			"config",
+			"javascript",
+			"js",
+			"coffee",
+			"<!DOCTYPE HTML>\n<html lang=\"en-US\" ng-app=\"sushi\">\n  <!-- \n  @node @angular\n  The ng-app attribute is represents an Angular directive (named ngApp; Angular uses name-with-dashes for attribute names and camelCase for the corresponding directive name) used to flag an element which Angular should consider to be the root element of our application. This gives application developers the freedom to tell Angular if the entire html page or only a portion of it should be treated as the Angular application\n-->\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Joly Sushi</title>\n  <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'> -->\n  <link rel=\"stylesheet\" href=\"css/index.css\">\n  <link rel=\"stylesheet\" href=\"vendor/bootstrap/css/bootstrap.min.css\">\n  <link rel=\"stylesheet\" href=\"vendor/bootstrap/css/bootstrap-responsive.min.css\">\n  <script type=\"text/javascript\" src=\"https://cdnjs.cloudflare.com/ajax/libs/es5-shim/1.2.4/es5-shim.min.js \"></script>\n  <script type=\"text/javascript\" src='vendor/jquery.min.js'></script>\n  <script type=\"text/javascript\" src=\"vendor/bootstrap/js/bootstrap.min.js\"></script>\n  <script type=\"text/javascript\" src=\"vendor/angular.js\"></script>\n  <script type=\"text/javascript\" src=\"js/filters.js\"></script>\n  <script type=\"text/javascript\" src='js/app.js'></script>\n  <script type=\"text/javascript\" src=\"js/controller.js\"></script>\n</head>\n<body>\n  <div class=\"container\">\n    <!-- header -->\n    <div class=\"row\">\n      <noscript>\n        <div class=\"span12\">Please enable Javascript to use this site.</div>\n      </noscript>\n      <div class='span12' ng-controller=\"ProductCardController\">\n        <div id='info-bar'>\n          <div class='alert alert-{{alert.type}}'>\n          <a class=\"close\" data-dismiss=\"alert\" href=\"#\">&times;</a>\n          <div>{{ alert.message }}</div>\n          </div>\n        </div>\n      </div>\n      <div class=\"span12\">\n        <h1>Joly Sushi <small class=\"serif\">Delicious sushis shiped worldwide.</small></h1>\n        <h4 </h3>\n          <h6>design by M.Paraiso</h6>\n          <h6><small>An angularjs showcase app</small></h6>\n          <h6>project page : <a href=\"https://github.com/Mparaiso/joly-sushi\">https://github.com/Mparaiso/joly-sushi</a> </h6>\n        </div>\n      </div>\n      <!-- end@header -->\n      <!--@note @angular creer une vue -->\n      <div  class=\"row\" ng-controller=\"ProductCardController\">\n        <span class='span9' ng-view>\n        </span>\n        <span class=\"span3\">\n          <h5>Card</h5>\n          <table class='table'>\n            <tr>\n              <th>Article</th>\n              <th>Price</th>\n              <th>Quantity</th>\n            </tr>\n            <tr ng-repeat='cardItem in card'>\n              <td><small>{{getFullName(cardItem.sushi)}}</small></td>\n              <td><small>{{cardItem.sushi.price}} €</small> </td>\n              <td><small><input type=\"text\" class='span1 quantity' ng-model=\"cardItem.quantity\"> </small></td>\n            </tr>\n            <tr>\n              <td>Total</td>\n              <td></td>\n              <td>{{ getTotalPrice() }} €</td>\n            </tr>\n          </table>\n        </span>\n      </div>\n      <div class='row'></div>\n      <small>&copy; 2012 M.Paraiso</small>\n    </div>\n  </body>\n  </html>\n",
+			"<!DOCTYPE HTML>\n<html lang=\"en-US\" ng-app>\n<!-- \n    @node @angular\n    The ng-app attribute is represents an Angular directive (named ngApp; Angular uses name-with-dashes for attribute names and camelCase for the corresponding directive name) used to flag an element which Angular should consider to be the root element of our application. This gives application developers the freedom to tell Angular if the entire html page or only a portion of it should be treated as the Angular application\n-->\n<head>\n    <meta charset=\"UTF-8\">\n    <title>Phone-cat</title>\n    <link rel=\"stylesheet\" href=\"vendor/bootstrap/css/bootstrap.min.css\">\n    <link rel=\"stylesheet\" href=\"vendor/bootstrap/css/bootstrap-reponsive.min.css\">\n    <script type=\"text/javascript\" src=\"vendor/angular.js\"></script>\n    <script type=\"text/javascript\" src='js/index.js'></script>\n    <script type=\"text/javascript\" src=\"js/controller.js\"></script>\n</head>\n<body ng-controller=\"ProductListController\">\n    <div class=\"containter container-fluid\">\n        <div class=\"row row-fluid\">\n            <h4>{{sushis.length}} Product(s)</h4>\n              <form class='form-inline' action=\"\">\n                <label for=\"filter\">Filter by name : </label>\n                <input type='text' ng-model=\"query\" name=\"filter\" >\n            </form>\n            <ul class='thumbnails'>\n                <!-- @note @angular filtrer une liste -->\n                <li class='span3' ng-repeat=\"sushi in sushis | filter:query\">\n                    <a href='#' class='thumbnail'>\n                        <img src=\"img/{{sushi.src}}\" alt=\"\">\n                        <h5>{{sushi.type}} {{sushi.name}}</h5>\n                        <p>{{sushi.price}} €</p>\n                    </a>\n                </li>\n            </ul>\n        </div>\n\n    </div>\n</div>\n</body>\n</html>",
+			"icon-c",
+			"icon-",
+			"spry:content",
+			"Console",
+			"click.tab.data-api",
+			"createDom2dLinks",
+			"link",
+			"setCurrentCollection",
+			"menustage",
+			"setCurrentLayout",
+			"layout3d",
+			"layout2d",
+			"link",
+			"^\\s*",
+			";",
+			"String=",
+			"public static inline var",
+			"\\*\\/",
+			"\\/\\*.*((\\n*).*)$",
+			"overflowPolicy",
+			"ALLOW_OVERFLOW",
+			"outsideBounds",
+			"setOutsideBounds",
+			"xPositionsetOutsideBounds",
+			"xPosition",
+			"node.setX",
+			"node.x",
+			"layoutChildrenVertically",
+			"alignColumn",
+			"alignitem",
+			"alignColumn",
+			"horizontalalign",
+			"yPa",
+			"vPadi",
+			"@_width",
+			"width",
+			"variable",
+			"@",
+			"regex",
+			"regexp",
+			"key",
+			"variable",
+			"scope",
+			"this",
+			"_width",
+			"_height",
+			"_rows",
+			"setRow",
+			"setRows",
+			"setRow",
+			"setCol",
+			"tab",
+			"login",
+			"timezone",
+			"time",
+			"created",
+			"route",
+			"templ",
+			"fold",
+			"inlin",
+			"encode",
+			"data",
+			"-mno-cygwin",
+			"                      ",
+			"\\s+$",
+			"visible",
+			"wrap",
+			"static",
+			"python",
+			"root",
+			"static",
+			"models",
+			"auth",
+			"type",
+			"snippetmanager",
+			"k",
+			"template",
+			"category",
+			"\"favorite\":\\s\\S+",
+			"\"created\"",
+			"\"updated\"",
+			"\"user_id\":\\s\\d+\\,",
+			"created",
+			"updated",
+			"category\""
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"ribbits_admin_list.twig",
+			"registrationForm",
+			"putenv(\"$1\")",
+			"=$val;}",
+			"($val)",
+			"set",
+			"",
+			"=$val;}",
+			"($val)",
+			"set",
+			"",
+			"//($1)",
+			"setCurrentLayoutCollection",
+			"",
+			"django_models",
+			"snippets",
+			"",
+			"\"created_at\"",
+			"\"updated_at\"",
+			"\"user_id\": 1,",
+			"created_at",
+			"updated_at",
+			"language\"",
+			"buddy",
+			"spectragram",
+			"a",
+			"xhr",
+			"config.mongo",
+			"_throwNotCallbackError",
+			"_isFunction",
+			"_values",
+			"",
+			"curl -O ",
+			"$this->articleManager",
+			"$this->userManager",
+			"$this->articleManager",
+			"$this->name",
+			"$this->myBase",
+			"=>\n",
+			"->\n",
+			"\">\n",
+			"Z",
+			"Y"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "DEVNOTES.md",
+					"settings":
+					{
+						"buffer_size": 96,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5,
+								5
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/Acme/HelloBundle/Resources/views/Hi/index.html.twig",
+					"settings":
+					{
+						"buffer_size": 162,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								162,
+								162
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP-Twig/Syntaxes/HTML (Twig).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/AppKernel.php",
+					"settings":
+					{
+						"buffer_size": 1621,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								540,
+								540
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/Acme/TestBundle/Controller/TestController.php",
+					"settings":
+					{
+						"buffer_size": 1073,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								590,
+								590
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/Acme/TestBundle/Resources/config/routing.yml",
+					"settings":
+					{
+						"buffer_size": 768,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								543,
+								543
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/YAML/YAML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 36.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.coffeecompile_output":
+	{
+		"height": 581.0
+	},
+	"output.exec":
+	{
+		"height": 141.0
+	},
+	"output.git":
+	{
+		"height": 114.0
+	},
+	"output.phpdocumentor":
+	{
+		"height": 102.0
+	},
+	"output.phpunit":
+	{
+		"height": 102.0
+	},
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"testrout",
+				"src/Acme/TestBundle/Resources/config/routing.yml"
+			],
+			[
+				"hicon",
+				"src/Acme/HelloBundle/Controller/HiController.php"
+			],
+			[
+				"routing",
+				"src/Acme/TestBundle/Resources/config/routing.yml"
+			],
+			[
+				"user",
+				"src/Ribbit/Entity/User.php"
+			],
+			[
+				"usermana",
+				"src/Ribbit/BusinessLogicLayer/UserManager.php"
+			],
+			[
+				"userma",
+				"src/Ribbit/BusinessLogicLayer/UserManager.php"
+			],
+			[
+				"console",
+				"src/console.php"
+			],
+			[
+				"iuserpr",
+				"src/Ribbit/DataAccessLayer/IUserProvider.php"
+			],
+			[
+				"docuser",
+				"src/Ribbit/DataAccessLayer/DoctrineUserProvider.php"
+			],
+			[
+				"doctrineservice",
+				"vendor/silex/silex/src/Silex/Provider/DoctrineServiceProvider.php"
+			],
+			[
+				"symfonymonolog",
+				"vendor/symfony/monolog-bridge/Symfony/Bridge/Monolog/Logger.php"
+			],
+			[
+				"app.php",
+				"src/app.php"
+			],
+			[
+				"set",
+				"tests/setup.php"
+			],
+			[
+				"silex.",
+				"log/silex.log"
+			],
+			[
+				"doctrinorm",
+				"src/Ribbit/Services/Provider/DoctrineORMServiceProvider.php"
+			],
+			[
+				"profile",
+				"src/templates/admin/users/profile.twig"
+			],
+			[
+				"docu",
+				"src/Ribbit/DataAccessLayer/DoctrineUserProvider.php"
+			],
+			[
+				"doctrineuser",
+				"src/Ribbit/DataAccessLayer/DoctrineUserProvider.php"
+			],
+			[
+				"ribbitadmin",
+				"src/Ribbit/Controllers/Admin/RibbitAdminController.php"
+			],
+			[
+				"menu",
+				"src/templates/admin/users/admin_menu.twig"
+			],
+			[
+				"useradmin",
+				"src/Ribbit/Controllers/Admin/UserAdminController.php"
+			],
+			[
+				"admin_me",
+				"src/templates/admin/users/admin_menu.twig"
+			],
+			[
+				"useradm",
+				"src/Ribbit/Controllers/Admin/UserAdminController.php"
+			],
+			[
+				"ribbitmana",
+				"src/Ribbit/BusinessLogicLayer/RibbitManager.php"
+			],
+			[
+				"indexcon",
+				"src/Ribbit/Controllers/IndexController.php"
+			],
+			[
+				"",
+				"src/Ribbit/Controllers/IndexController.php"
+			],
+			[
+				"home",
+				"src/templates/home.twig"
+			],
+			[
+				"ribbi",
+				"src/Ribbit/Entity/Ribbit.php"
+			],
+			[
+				"user.pp",
+				"src/Ribbit/Entity/User.php"
+			],
+			[
+				"userman",
+				"src/Ribbit/BusinessLogicLayer/UserManager.php"
+			],
+			[
+				"login",
+				"src/templates/users/login.twig"
+			],
+			[
+				"layout",
+				"src/templates/layout.twig"
+			],
+			[
+				"app",
+				"src/app.php"
+			],
+			[
+				"usercon",
+				"src/Ribbit/Controllers/UserController.php"
+			],
+			[
+				"role.php",
+				"src/Ribbit/Entity/Role.php"
+			],
+			[
+				"rolepro",
+				"src/Ribbit/DataAccessLayer/DoctrineRoleProvider.php"
+			],
+			[
+				"rolemana",
+				"src/Ribbit/BusinessLogicLayer/RoleManager.php"
+			],
+			[
+				"irole",
+				"src/Ribbit/DataAccessLayer/IRoleProvider.php"
+			],
+			[
+				"securitypro",
+				"vendor/silex/silex/src/Silex/Provider/SecurityServiceProvider.php"
+			],
+			[
+				"securityprovider",
+				"vendor/silex/silex/src/Silex/Provider/SecurityServiceProvider.php"
+			],
+			[
+				"usermanager",
+				"src/Ribbit/BusinessLogicLayer/UserManager.php"
+			],
+			[
+				"docuserpro",
+				"src/Ribbit/DataAccessLayer/DoctrineUserProvider.php"
+			],
+			[
+				"docuserpr",
+				"src/Ribbit/DataAccessLayer/DoctrineUserProvider.php"
+			],
+			[
+				"userpro",
+				"src/Ribbit/DataAccessLayer/DoctrineUserProvider.php"
+			],
+			[
+				"registertype",
+				"src/Ribbit/Forms/RegisterType.php"
+			],
+			[
+				"register.twig",
+				"src/templates/forms/register.twig"
+			],
+			[
+				"home.twig",
+				"src/templates/home.twig"
+			],
+			[
+				"form",
+				"vendor/symfony/form/Symfony/Component/Form/Form.php"
+			],
+			[
+				"index",
+				"src/Ribbit/Controllers/IndexController.php"
+			],
+			[
+				"do",
+				"src/Ribbit/Services/Providers/DoctrineORMServiceProvider.php"
+			],
+			[
+				"userc",
+				"src/Ribbit/Controllers/UserController.php"
+			],
+			[
+				"indexc",
+				"src/Ribbit/Controllers/IndexController.php"
+			],
+			[
+				"user.p",
+				"src/Ribbit/Entity/User.php"
+			],
+			[
+				"userprote",
+				"tests/Ribbit/DaTaAccessLayer/DoctrineUserProviderTest.php"
+			],
+			[
+				"monologlog",
+				"vendor/monolog/monolog/src/Monolog/Logger.php"
+			],
+			[
+				"servi",
+				"src/services.php"
+			],
+			[
+				"bookmpr",
+				"App/DataAccessLayer/BookmarkProvider.php"
+			],
+			[
+				"book-",
+				"www/static/js/app/partials/bookmark-edit-form.html"
+			],
+			[
+				"directive",
+				"www/static/js/app/modules/ApplicationDirectives.js"
+			],
+			[
+				"bmt",
+				"tests/App/BusinessLogicLayer/BookmarkManagerTest.php"
+			],
+			[
+				"bookma",
+				"App/BusinessLogicLayer/BookmarkManager.php"
+			],
+			[
+				"application",
+				"App/application.php"
+			],
+			[
+				"account",
+				"www/static/js/app/partials/account.html"
+			],
+			[
+				"bookcon",
+				"App/Controller/BookmarkController.php"
+			],
+			[
+				"booktest",
+				"tests/App/BusinessLogicLayer/BookmarkManagerTest.php"
+			],
+			[
+				"bookmm",
+				"App/BusinessLogicLayer/BookmarkManager.php"
+			],
+			[
+				"appli",
+				"App/application.php"
+			],
+			[
+				"tagpro",
+				"App/DataAccessLayer/TagProvider.php"
+			],
+			[
+				"tagct",
+				"tests/App/Controller/TagControllerTest.php"
+			],
+			[
+				"bomates",
+				"tests/App/BusinessLogicLayer/BookmarkManagerTest.php"
+			],
+			[
+				"bookman",
+				"App/BusinessLogicLayer/BookmarkManager.php"
+			],
+			[
+				"test",
+				"vendor/silex/silex/doc/testing.rst"
+			],
+			[
+				"bocontr",
+				"tests/App/Controller/BookmarkControllerTest.php"
+			],
+			[
+				"response",
+				"vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Response.php"
+			],
+			[
+				"bookmarkc",
+				"App/Controller/BookmarkController.php"
+			],
+			[
+				"bookmarkma",
+				"App/BusinessLogicLayer/BookmarkManager.php"
+			],
+			[
+				"dire",
+				"www/static/js/app/modules/ApplicationDirectives.js"
+			],
+			[
+				"bookm",
+				"App/Services/Managers/BookmarkManager.php"
+			],
+			[
+				"appd",
+				"public/static/js/app/modules/ApplicationDirectives.js"
+			],
+			[
+				"book",
+				"public/static/js/app/partials/bookmarks.html"
+			],
+			[
+				"appdir",
+				"public/static/js/app/modules/ApplicationDirectives.js"
+			],
+			[
+				"acc",
+				"public/static/js/app/partials/account.html"
+			],
+			[
+				"apser",
+				"public/static/js/app/modules/ApplicationServices.js"
+			],
+			[
+				"bocon",
+				"App/Controller/BookmarkController.php"
+			],
+			[
+				"style",
+				"public/static/css/style.css"
+			],
+			[
+				"apptw",
+				"App/Views/application.twig"
+			],
+			[
+				"nav",
+				"public/static/js/app/partials/application-nav.html"
+			],
+			[
+				"edit",
+				"public/static/js/app/partials/bookmark-edit-form.html"
+			],
+			[
+				"bcon",
+				"App/Controller/BookmarkController.php"
+			],
+			[
+				"boocont",
+				"App/Controller/BookmarkController.php"
+			],
+			[
+				"appser",
+				"public/static/js/app/modules/ApplicationServices.js"
+			],
+			[
+				"boo",
+				"public/static/js/app/partials/bookmarks.html"
+			],
+			[
+				"modal",
+				"public/static/js/app/partials/modal.html"
+			],
+			[
+				"direc",
+				"public/static/js/app/modules/ApplicationDirectives.js"
+			],
+			[
+				"appna",
+				"public/static/js/app/partials/application-nav.html"
+			],
+			[
+				"devno",
+				"DEVNOTES.md"
+			],
+			[
+				"appserv",
+				"public/static/js/app/modules/ApplicationServices.js"
+			],
+			[
+				"tag",
+				"public/static/js/app/partials/tags.html"
+			],
+			[
+				"directiv",
+				"public/static/js/app/modules/ApplicationDirectives.js"
+			],
+			[
+				"tags",
+				"public/static/js/app/partials/tags.html"
+			],
+			[
+				".log",
+				"log/access.log"
+			],
+			[
+				"applicationser",
+				"public/static/js/app/modules/ApplicationServices.js"
+			],
+			[
+				"tag.",
+				"public/static/js/app/partials/tags.html"
+			],
+			[
+				"tagcon",
+				"App/Controller/TagController.php"
+			],
+			[
+				"layou",
+				"App/Views/layout.twig"
+			],
+			[
+				"apn",
+				"public/static/js/app/partials/application-nav.html"
+			],
+			[
+				"main",
+				"public/static/js/main.js"
+			],
+			[
+				"applicationcon",
+				"public/static/js/app/Controllers/ApplicationController.js"
+			],
+			[
+				"application.twig",
+				"App/Views/application.twig"
+			],
+			[
+				"appservice",
+				"public/static/js/app/Services/ApplicationServices.js"
+			],
+			[
+				"applic",
+				"public/static/js/app/Controllers/ApplicationController.js"
+			],
+			[
+				"appliation",
+				"public/static/js/app/partials/application.html"
+			],
+			[
+				"imagecon",
+				"tests/App/Controller/ImageControllerTest.php"
+			],
+			[
+				"connection",
+				"vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php"
+			],
+			[
+				"statement",
+				"vendor/doctrine/dbal/lib/Doctrine/DBAL/Statement.php"
+			],
+			[
+				"bookmarkcon",
+				"App/Controller/BookmarkController.php"
+			],
+			[
+				"application.",
+				"App/Views/application.twig"
+			],
+			[
+				"applicat",
+				"public/static/js/app/partials/application.html"
+			],
+			[
+				"usercontrollertes",
+				"tests/App/Controller/UserControllerTest.php"
+			],
+			[
+				"bookmar",
+				"App/Controller/BookmarkController.php"
+			],
+			[
+				"applica",
+				"App/application.php"
+			],
+			[
+				"ind",
+				"App/Views/index.twig"
+			],
+			[
+				"services",
+				"public/static/js/app/Services/ApplicationServices.js"
+			],
+			[
+				"applicon",
+				"public/static/js/app/Controllers/ApplicationController.js"
+			],
+			[
+				"application.php",
+				"App/application.php"
+			],
+			[
+				"homecon",
+				"public/static/js/app/Controllers/HomeController.js"
+			],
+			[
+				"hompage-",
+				"public/static/js/app/partials/homepage-nav.html"
+			],
+			[
+				"index.t",
+				"App/Views/index.twig"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"parse",
+				"/C/projects/categories/parse/parse-angular/parse-angular.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 210.0,
+	"status_bar_visible": true
+}

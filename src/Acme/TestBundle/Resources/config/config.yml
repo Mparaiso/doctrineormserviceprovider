@@ -1,0 +1,3 @@
+test_test_index:
+    pattern: /test
+    defaults: { _controller: AcmeTestBundle:Test:index }

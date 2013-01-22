@@ -1,0 +1,19 @@
+# @note @symfony déclarer les routes pointant vers les méthodes des controlleurs.
+test_test_index:
+    pattern: /test/{first_name}/{last_name}/{color}
+    #@note @symfony définir des valeurs de paramètres par défaut
+    defaults: { _controller: AcmeTestBundle:Test:index, color:green, first_name:Clarck ,last_name:Kent }
+    #@note @symfony ajouter une condition à la route
+    requirements:
+        first_name: \w+
+        color: green|yellow
+        culture: en|fr
+        _format: html|json
+        # @note @symfony requerir une méthode
+        _method: GET|POST
+test_test_redirect:
+    pattern: /redirect
+    defaults: {_controller: AcmeTestBundle:Test:redirect}
+test_test_forward:
+    pattern: /forward
+    defaults: {_controller: AcmeTestBundle:Test:forward}

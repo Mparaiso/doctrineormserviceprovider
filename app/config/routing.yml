@@ -1,6 +1,10 @@
 acme_hello:
     resource: "@AcmeHelloBundle/Resources/config/routing.yml"
     prefix:   /
+# @note @symfony referencer la racine de la route d'un bundle crée manuellement
+acme_test:
+    resource: "@AcmeTestBundle/Resources/config/routing.yml"
+    prefix:   /
 
 # Internal routing configuration to handle ESI
 # ****** WARNING ******
