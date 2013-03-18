@@ -1,0 +1,32 @@
+{
+  "name": "mparaiso/doctrineormserviceprovider",
+  "description": "Doctrine ORM for Silex",
+  "keywords": [
+    "silex",
+    "extensions",
+    "orm",
+    "doctrine"
+  ],
+  "homepage": "https://github.com/Mparaiso/aclserviceprovider",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "MParaiso",
+      "email": "mparaiso@online.fr"
+    }
+  ],
+  "require-dev": {
+    "silex/silex": "*"
+  },
+  "require": {
+    "php": ">=5.3.3",
+    "doctrine/orm": "2.3.*",
+    "symfony/console":"2.2.*"
+  },
+  "suggest": {},
+  "autoload": {
+    "psr-0": {
+      "Mparaiso": "src/"
+    }
+  }
+}
