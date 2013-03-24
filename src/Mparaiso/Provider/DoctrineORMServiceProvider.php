@@ -15,7 +15,7 @@ class DoctrineORMServiceProvider implements ServiceProviderInterface {
 
   public function register(Application $app) {
     $app["em.proxy_dir"] = null;
-    $app["em"] = $app->share(function($app) {
+    $app["em"] = $app->share(function(Application $app) {
       if (!is_array($app["em.metadata"]["path"])) {
         throw new \Exception("\$app['em.metadata']['path'] must be an array of paths");
       }

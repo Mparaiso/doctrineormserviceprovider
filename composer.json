@@ -7,7 +7,7 @@
     "orm",
     "doctrine"
   ],
-  "homepage": "https://github.com/Mparaiso/aclserviceprovider",
+  "homepage": "https://github.com/Mparaiso/doctrineormserviceprovider",
   "license": "MIT",
   "authors": [
     {
