@@ -74,9 +74,9 @@ class DoctrineORMServiceProvider implements ServiceProviderInterface
         $app["orm.em"] = $app->share(function ($app) {
             foreach ($app["orm.driver.configs"] as $key => $config) {
                 if ($key == "default") {
-                    $app["orm.chain_driver"]->setDefaultDriver(self::getDriver($config['type'], $config['paths'], $app["orm.config"]));
+                    $app["orm.chain_driver"]->setDefaultDriver(DoctrineORMServiceProvider::getDriver($config['type'], $config['paths'], $app["orm.config"]));
                 }
-                $app["orm.chain_driver"]->addDriver(self::getDriver($config['type'], $config['paths'], $app["orm.config"]), $config["namespace"]);
+                $app["orm.chain_driver"]->addDriver(DoctrineORMServiceProvider::getDriver($config['type'], $config['paths'], $app["orm.config"]), $config["namespace"]);
             }
             if (!isset($app["orm.connection"]) && $app["db"]) {
                 $app["orm.connection"] = $app["db"];
