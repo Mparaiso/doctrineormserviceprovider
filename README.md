@@ -15,6 +15,7 @@ helps use Doctrine ORM with silex
 
 here is a configuration exemple for silex:
 
+    $app->register(new ConsoleServiceProvider); // to manage entities through command line.
     $app->register(new DoctrineServiceProvider,array(
             "db.options"=> array(
                 "dbname"   =>  getenv("DBNAME"),
