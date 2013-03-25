@@ -47,11 +47,12 @@ class DoctrineORMServiceProvider implements ServiceProviderInterface
 
     public function register(Application $app)
     {
-        $self = $this;
-        $app["orm.proxy_dir"]    = NULL;
-        $app["orm.cache"]        = NULL;
-        $app["orm.is_dev_mode"]  = $app["debug"];
-        $app["orm.chain_driver"] = $app->share(function () {
+        $self                      = $this;
+        $app["orm.proxy_dir"]      = NULL;
+        $app["orm.cache"]          = NULL;
+        $app["orm.is_dev_mode"]    = $app["debug"];
+        $app['orm.driver.configs'] = array();
+        $app["orm.chain_driver"]   = $app->share(function () {
             return new MappingDriverChain();
         });
         /**
@@ -66,13 +67,14 @@ class DoctrineORMServiceProvider implements ServiceProviderInterface
             if (isset($app["orm.logger"])) {
                 $config->setSQLLogger($app["orm.logger"]);
             }
+            $config->addCustomDatetimeFunction("DATE", '\Mparaiso\Doctrine\ORM\Function\Date');
             return $config;
         });
         /**
          * EN : create the entity manager
          * FR : créer l'entity manager
          */
-        $app["orm.em"] = $app->share(function ($app)use($self) {
+        $app["orm.em"] = $app->share(function ($app) use ($self) {
             foreach ($app["orm.driver.configs"] as $key => $config) {
                 if ($key == "default") {
                     $app["orm.chain_driver"]->setDefaultDriver($self->getDriver($config['type'], $config['paths'], $app["orm.config"]));
