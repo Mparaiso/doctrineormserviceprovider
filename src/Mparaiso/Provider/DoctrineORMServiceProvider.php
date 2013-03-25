@@ -29,7 +29,7 @@ class DoctrineORMServiceProvider implements ServiceProviderInterface
 
     }
 
-    static function getDriver($type, array $paths, Configuration $config)
+    function getDriver($type, array $paths, Configuration $config)
     {
         $driver = NULL;
         switch ($type) {
@@ -47,6 +47,7 @@ class DoctrineORMServiceProvider implements ServiceProviderInterface
 
     public function register(Application $app)
     {
+        $self = $this;
         $app["orm.proxy_dir"]    = NULL;
         $app["orm.cache"]        = NULL;
         $app["orm.is_dev_mode"]  = $app["debug"];
@@ -71,12 +72,12 @@ class DoctrineORMServiceProvider implements ServiceProviderInterface
          * EN : create the entity manager
          * FR : créer l'entity manager
          */
-        $app["orm.em"] = $app->share(function ($app) {
+        $app["orm.em"] = $app->share(function ($app)use($self) {
             foreach ($app["orm.driver.configs"] as $key => $config) {
                 if ($key == "default") {
-                    $app["orm.chain_driver"]->setDefaultDriver(DoctrineORMServiceProvider::getDriver($config['type'], $config['paths'], $app["orm.config"]));
+                    $app["orm.chain_driver"]->setDefaultDriver($self::getDriver($config['type'], $config['paths'], $app["orm.config"]));
                 }
-                $app["orm.chain_driver"]->addDriver(DoctrineORMServiceProvider::getDriver($config['type'], $config['paths'], $app["orm.config"]), $config["namespace"]);
+                $app["orm.chain_driver"]->addDriver($self::getDriver($config['type'], $config['paths'], $app["orm.config"]), $config["namespace"]);
             }
             if (!isset($app["orm.connection"]) && $app["db"]) {
                 $app["orm.connection"] = $app["db"];
