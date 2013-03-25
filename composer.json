@@ -15,13 +15,11 @@
       "email": "mparaiso@online.fr"
     }
   ],
-  "require-dev": {
-    "silex/silex": "*"
-  },
   "require": {
     "php": ">=5.3.3",
     "doctrine/orm": "2.3.*",
-    "symfony/console":"2.2.*"
+    "mparaiso/consoleserviceprovider":"*@dev",
+    "silex/silex":"*@dev"
   },
   "suggest": {},
   "autoload": {
