@@ -13,12 +13,12 @@ function getApp()
     $app->register(new ConsoleServiceProvider);
     $app->register(new DoctrineORMServiceProvider, array(
         "orm.connection" =>
-        array('driver' => "pdo_sqlite", 'path' => ROOT_TEST_DIR . '\database.sqlite'),
+        array('driver' => "pdo_sqlite", 'path' => ROOT_TEST_DIR . '/database.sqlite'),
         "orm.driver.configs"    => array(
             "default" => array(
                 "namespace"=>"Entity",
                 "type"  => "yaml",
-                "paths" => array(ROOT_TEST_DIR . '\doctrine'),
+                "paths" => array(ROOT_TEST_DIR . '/doctrine'),
             )
         )
     ));
