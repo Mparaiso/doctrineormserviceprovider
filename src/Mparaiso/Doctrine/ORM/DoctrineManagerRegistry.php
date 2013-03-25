@@ -1,6 +1,6 @@
 <?php
 
-namespace Mparaiso\Bridge\Doctrine;
+namespace Mparaiso\Doctrine\ORM;
 
 use Doctrine\Common\Persistence\AbstractManagerRegistry;
 use Exception;
@@ -11,7 +11,7 @@ class DoctrineManagerRegistry implements ManagerRegistry{
     protected $managers;
     protected $connections;
 
-    function __construct(array $managers,array $connections=array(),$defaultManager="default",$defaultConnection="default"){
+    function __construct(array $managers,array $connections,$defaultManager="default",$defaultConnection="default"){
         $this->managers = $managers;
         $this->connections = $connections;
         $this->defaultManager = $defaultManager;

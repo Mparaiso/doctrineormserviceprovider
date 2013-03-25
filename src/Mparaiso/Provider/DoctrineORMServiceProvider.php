@@ -3,6 +3,7 @@
 namespace Mparaiso\Provider;
 
 use Silex\ServiceProviderInterface;
+use Mparaiso\Doctrine\ORM\DoctrineManagerRegistry;
 use Doctrine\ORM\Configuration;
 use Doctrine\ORM\Tools\Console\ConsoleRunner;
 use Doctrine\DBAL\Tools\Console\Helper\ConnectionHelper;
@@ -28,7 +29,7 @@ class DoctrineORMServiceProvider implements ServiceProviderInterface
 
     }
 
-    static function getDriver($type, array $paths,Configuration $config)
+    static function getDriver($type, array $paths, Configuration $config)
     {
         $driver = NULL;
         switch ($type) {
@@ -39,7 +40,7 @@ class DoctrineORMServiceProvider implements ServiceProviderInterface
                 $driver = new XmlDriver($paths);
                 break;
             case 'annotation' :
-                $driver = $config->newDefaultAnnotationDriver($paths,TRUE);
+                $driver = $config->newDefaultAnnotationDriver($paths, TRUE);
         }
         return $driver;
     }
@@ -73,9 +74,9 @@ class DoctrineORMServiceProvider implements ServiceProviderInterface
         $app["orm.em"] = $app->share(function ($app) {
             foreach ($app["orm.driver.configs"] as $key => $config) {
                 if ($key == "default") {
-                    $app["orm.chain_driver"]->setDefaultDriver(self::getDriver($config['type'], $config['paths'],$app["orm.config"]));
+                    $app["orm.chain_driver"]->setDefaultDriver(self::getDriver($config['type'], $config['paths'], $app["orm.config"]));
                 }
-                $app["orm.chain_driver"]->addDriver(self::getDriver($config['type'], $config['paths'],$app["orm.config"]), $config["namespace"]);
+                $app["orm.chain_driver"]->addDriver(self::getDriver($config['type'], $config['paths'], $app["orm.config"]), $config["namespace"]);
             }
             if (!isset($app["orm.connection"]) && $app["db"]) {
                 $app["orm.connection"] = $app["db"];
@@ -91,6 +92,13 @@ class DoctrineORMServiceProvider implements ServiceProviderInterface
             }
             return $em;
         });
+
+        $app['orm.manager_registry'] = $app->share(function ($app) {
+            return new DoctrineManagerRegistry(array("default" => $app['orm.em']),
+                array("default" => $app['orm.em']->getConnection()));
+        });
+
     }
+
 
 }
