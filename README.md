@@ -1,6 +1,8 @@
 Doctrine ORM Service Provider
 =============================
 
+[![Build Status](https://travis-ci.org/Mparaiso/doctrineormserviceprovider.png?branch=master)](https://travis-ci.org/Mparaiso/doctrineormserviceprovider)
+
 Doctrine ORM silex extension
 ----------------------------
 
@@ -34,3 +36,8 @@ here is a configuration exemple for silex:
                )
            )
        ));
+
+Services :
+
++ orm.em : EntityManager
++ orm.manager_registry  : Manager registry
