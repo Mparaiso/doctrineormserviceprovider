@@ -23,14 +23,13 @@ here is a configuration exemple for silex:
                 "host"     => getenv("_HOST"),
                 "driver"   => "pdo_mysql",
     )));
-    $app->register(new DoctrineORMServiceProvider(), array(
-        "em.logger" => function($app) { /** optional use a logger to log requests **/
-            return new MonologSQLLogger($app["logger"]);
-        },
-        "em.metadata" => array(
-            "type" => "annotation",
-            "path" => array(__DIR__ ."/Ribbit/Entity/"),
-            ),
-        "em.proxy_dir" => dirname(__DIR__)."/cache",
-        "em.is_dev_mode" => $app["debug"]
-        ));
+
+    $app->register(new DoctrineORMServiceProvider, array(
+           "orm.driver.configs"    => array(
+               "default" => array(
+                   "namespace"=>"Entity",  // rootnamespace of your entities
+                   "type"  => "yaml", // driver type (yaml,xml,annotation)
+                   "paths" => array(__DIR__ . '/doctrine'), // config file path
+               )
+           )
+       ));

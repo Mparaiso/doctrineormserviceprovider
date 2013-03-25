@@ -17,6 +17,9 @@ use Doctrine\ORM\Tools\Setup;
 use Doctrine\ORM\EntityManager;
 use Mparaiso\Provider\ConsoleServiceProvider;
 
+/**
+ * @see https://github.com/mpmedia/dflydev-doctrine-orm-service-provider/blob/master/src/Dflydev/Pimple/Provider/DoctrineOrm/DoctrineOrmServiceProvider.php
+ */
 class DoctrineORMServiceProvider implements ServiceProviderInterface
 {
 
@@ -36,7 +39,7 @@ class DoctrineORMServiceProvider implements ServiceProviderInterface
                 $driver = new XmlDriver($paths);
                 break;
             case 'annotation' :
-                $driver = $config->newDefaultAnnotationDriver($paths,true);
+                $driver = $config->newDefaultAnnotationDriver($paths,TRUE);
         }
         return $driver;
     }
