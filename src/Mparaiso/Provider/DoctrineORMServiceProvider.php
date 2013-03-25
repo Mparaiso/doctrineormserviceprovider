@@ -3,6 +3,7 @@
 namespace Mparaiso\Provider;
 
 use Silex\ServiceProviderInterface;
+use Doctrine\ORM\Configuration;
 use Doctrine\ORM\Tools\Console\ConsoleRunner;
 use Doctrine\DBAL\Tools\Console\Helper\ConnectionHelper;
 use Doctrine\ORM\Tools\Console\Helper\EntityManagerHelper;
@@ -24,7 +25,7 @@ class DoctrineORMServiceProvider implements ServiceProviderInterface
 
     }
 
-    function getDriver($type, array $paths)
+    static function getDriver($type, array $paths,Configuration $config)
     {
         $driver = NULL;
         switch ($type) {
@@ -34,26 +35,18 @@ class DoctrineORMServiceProvider implements ServiceProviderInterface
             case 'xml':
                 $driver = new XmlDriver($paths);
                 break;
-            default :
-                $driver = new AnnotationDriver();
+            case 'annotation' :
+                $driver = $config->newDefaultAnnotationDriver($paths,true);
         }
         return $driver;
     }
 
     public function register(Application $app)
     {
-        $self                               = $this;
-        $app["orm.proxy_dir"]               = NULL;
-        $app["orm.cache"]                   = NULL;
-        $app['drm.default_manager_name']    = "default";
-        $app['orm.default_connection_name'] = "default";
-        $app["orm.managers"]                = array();
-        $app["orm.connections"]             = array();
-        $app["orm.is_dev_mode"]             = $app->share(function ($app) {
-            return $app["debug"];
-        });
-        $app["orm.driver.configs"]          = array();
-        $app["orm.chain_driver"]            = $app->share(function () {
+        $app["orm.proxy_dir"]    = NULL;
+        $app["orm.cache"]        = NULL;
+        $app["orm.is_dev_mode"]  = $app["debug"];
+        $app["orm.chain_driver"] = $app->share(function () {
             return new MappingDriverChain();
         });
         /**
@@ -65,38 +58,33 @@ class DoctrineORMServiceProvider implements ServiceProviderInterface
                 $app["orm.proxy_dir"],
                 $app["orm.cache"]);
             $config->setMetadataDriverImpl($app["orm.chain_driver"]);
+            if (isset($app["orm.logger"])) {
+                $config->setSQLLogger($app["orm.logger"]);
+            }
             return $config;
         });
         /**
          * EN : create the entity manager
          * FR : créer l'entity manager
          */
-        $app["orm.em"] = $app->share(function ($app) use ($self) {
-            /* @var $chain \Doctrine\Common\Persistence\Mapping\Driver\MappingDriverChain */
-            $chain = $app["orm.chain_driver"];
+        $app["orm.em"] = $app->share(function ($app) {
             foreach ($app["orm.driver.configs"] as $key => $config) {
-                if ($key = "default") {
-                    $chain->setDefaultDriver($self->getDriver($config['type'], $config['paths']));
-                } else {
-                    $chain->addDriver($self->getDriver($config['type'], $config['paths']), $key);
-
+                if ($key == "default") {
+                    $app["orm.chain_driver"]->setDefaultDriver(self::getDriver($config['type'], $config['paths'],$app["orm.config"]));
                 }
+                $app["orm.chain_driver"]->addDriver(self::getDriver($config['type'], $config['paths'],$app["orm.config"]), $config["namespace"]);
             }
             if (!isset($app["orm.connection"]) && $app["db"]) {
                 $app["orm.connection"] = $app["db"];
             }
             $em = EntityManager::create($app["orm.connection"], $app["orm.config"]);
-            if (isset($app["orm.logger"])) {
-                $em->getConfiguration()->setSQLLogger($app["orm.logger"]);
-            }
+
             if (isset($app["console"])) {
-                $app->on(ConsoleServiceProvider::INIT, function () use ($app, $em) {
-                    /* @var $console \Symfony\Component\Console\Application */
-                    $console = $app["console"];
-                    $console->getHelperSet()->set(new EntityManagerHelper($em), "em");
-                    $console->getHelperSet()->set(new ConnectionHelper($em->getConnection()), "db");
-                    ConsoleRunner::addCommands($console);
-                });
+                /* @var $console \Symfony\Component\Console\Application */
+                $console = $app["console"];
+                $console->getHelperSet()->set(new EntityManagerHelper($em), "em");
+                $console->getHelperSet()->set(new ConnectionHelper($em->getConnection()), "db");
+                ConsoleRunner::addCommands($app["console"]);
             }
             return $em;
         });

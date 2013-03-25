@@ -209,12 +209,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Mparaiso/consoleserviceprovider.git",
-                "reference": "dd8111500ab79886025c46f1c9802eaa8c32be94"
+                "reference": "0.0.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Mparaiso/consoleserviceprovider/zipball/dd8111500ab79886025c46f1c9802eaa8c32be94",
-                "reference": "dd8111500ab79886025c46f1c9802eaa8c32be94",
+                "url": "https://api.github.com/repos/Mparaiso/consoleserviceprovider/zipball/0.0.4",
+                "reference": "0.0.4",
                 "shasum": ""
             },
             "require": {
@@ -245,7 +245,7 @@
                 "silex",
                 "symfony"
             ],
-            "time": "2013-03-25 10:12:29"
+            "time": "2013-03-25 10:19:03"
         },
         {
             "name": "pimple/pimple",

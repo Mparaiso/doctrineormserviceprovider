@@ -3,11 +3,12 @@
 namespace Mparaiso\Provider;
 
 use PHPUnit_Framework_TestCase;
+use Doctrine\ORM\Tools\DisconnectedClassMetadataFactory;
 use Doctrine\ORM\Tools\EntityGenerator;
 use Doctrine\ORM\Tools\SchemaTool;
 
 
-class DoctrineOrmServiceProviderTest extends PHPUnit_Framework_TestCase
+class DoctrineOrmServiceProviderTest extends \PHPUnit_Framework_TestCase
 {
 
     protected $app;
@@ -31,18 +32,32 @@ class DoctrineOrmServiceProviderTest extends PHPUnit_Framework_TestCase
     function testCreateSchema()
     {
         /* @var $em \Doctrine\ORM\EntityManager */
-        $em        = $this->app["orm.em"];
-        $tool      = new SchemaTool($em);
-        $metatdata = $em->getMetadataFactory()->getAllMetadata();
-        print_r($metatdata);
-        $tool->createSchema($metatdata);
+        $em   = $this->app["orm.em"];
+        $tool = new SchemaTool($em);
+        //@note @doctrine générer les fichiers de classe à partir de métadonnées
+        /* generate entity classes */
+        $dmf = new DisconnectedClassMetadataFactory();
+        $dmf->setEntityManager($em);
+        $metadatas = $dmf->getAllMetadata();
+        //print_r($metadatas);
         $generator = new EntityGenerator();
-        $generator->setRegenerateEntityIfExists(true);
-        $generator->setGenerateAnnotations(true);
+        $generator->setGenerateAnnotations(TRUE);
+        $generator->setGenerateStubMethods(TRUE);
+        $generator->setRegenerateEntityIfExists(TRUE);
+        $generator->setUpdateEntityIfExists(TRUE);
+        $generator->generate($metadatas, ROOT_TEST_DIR);
         $generator->setNumSpaces(4);
-        $generator->generate($metatdata,ROOT_TEST_DIR);
-        $this->assertFileExists(ROOT_TEST_DIR."/Entity/Post.php");
-        //$post = new \Entity\Post;
+        $this->assertFileExists(ROOT_TEST_DIR . "/Entity/Post.php");
+        /* @note @doctrine générer la base de donnée à partir des métadonnées */
+        /* @see Doctrine\ORM\Tools\Console\Command\SchemaTool\CreateCommand */
+        /* generate database */
+        $tool->dropSchema($metadatas);
+        $tool->createSchema($metadatas);
+        $post = new \Entity\Post;
+        $post->setTitle("the title");
+        $em->persist($post);
+        $em->flush();
+        $this->assertInternalType("int", $post->getId());
     }
 
 
