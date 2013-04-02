@@ -77,7 +77,7 @@ class DoctrineORMServiceProvider implements ServiceProviderInterface
          */
         $app["orm.em"] = $app->share(function ($app) use ($self) {
             foreach ($app["orm.driver.configs"] as $key => $config) {
-                if(! is_array($config['paths'])throw new Exception(' $config["paths"] must be an array of paths ');
+                if(! is_array($config['paths']))throw new Exception(' $config["paths"] must be an array of paths ');
                 if ($key == "default") {
                     $app["orm.chain_driver"]->setDefaultDriver($self->getDriver($config['type'], $config['paths'], $app["orm.config"]));
                 }
