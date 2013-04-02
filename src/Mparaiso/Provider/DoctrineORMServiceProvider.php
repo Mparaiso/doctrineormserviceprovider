@@ -86,19 +86,24 @@ class DoctrineORMServiceProvider implements ServiceProviderInterface
             }
             $em = EntityManager::create($app["orm.connection"], $app["orm.config"]);
 
-            if (isset($app["console"])) {
-                /* @var $console \Symfony\Component\Console\Application */
-                $console = $app["console"];
-                $console->getHelperSet()->set(new EntityManagerHelper($em), "em");
-                $console->getHelperSet()->set(new ConnectionHelper($em->getConnection()), "db");
-                ConsoleRunner::addCommands($app["console"]);
-            }
             return $em;
         });
 
         $app['orm.manager_registry'] = $app->share(function ($app) {
             return new DoctrineManagerRegistry(array("default" => $app['orm.em']),
                 array("default" => $app['orm.em']->getConnection()));
+        });
+
+        /* call this to install Doctrine orm's commands $app['orm.console.boot_commands']() */
+        $app['orm.console.boot_commands']=$app->protect(function()use($app){
+            if (isset($app["console"])) {
+                $em = $app['orm.em'];
+                /* @var $console \Symfony\Component\Console\Application */
+                $console = $app["console"];
+                $console->getHelperSet()->set(new EntityManagerHelper($em), "em");
+                $console->getHelperSet()->set(new ConnectionHelper($em->getConnection()), "db");
+                ConsoleRunner::addCommands($app["console"]);
+            }
         });
 
     }
