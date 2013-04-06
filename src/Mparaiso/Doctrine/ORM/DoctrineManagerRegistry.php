@@ -10,8 +10,9 @@ class DoctrineManagerRegistry implements ManagerRegistry{
 
     protected $managers;
     protected $connections;
-
-    function __construct(array $managers,array $connections,$defaultManager="default",$defaultConnection="default"){
+    protected $name;
+    function __construct($name,array $connections,array $managers,$defaultConnection="default",$defaultManager="default"){
+        $this->name = $name;
         $this->managers = $managers;
         $this->connections = $connections;
         $this->defaultManager = $defaultManager;
@@ -118,7 +119,7 @@ class DoctrineManagerRegistry implements ManagerRegistry{
     {
         foreach($this->managers as $manager){
             /* @var $manager \Doctrine\ORM\EntityManager */
-            if($manager->getMetadataFactory()->isTransient($class)){
+            if(!$manager->getMetadataFactory()->isTransient($class)){
                 return $manager;
             }
         }
