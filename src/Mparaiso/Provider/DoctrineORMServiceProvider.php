@@ -21,6 +21,7 @@ use Doctrine\ORM\EntityManager;
 //use Mparaiso\Provider\ConsoleServiceProvider;
 use Symfony\Bridge\Doctrine\Form\DoctrineOrmExtension;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntityValidator;
+use Mparaiso\Doctrine\ORM\Command\ImportMappingDoctrineCommand;
 
 /**
  * @see https://github.com/mpmedia/dflydev-doctrine-orm-service-provider/blob/master/src/Dflydev/Pimple/Provider/DoctrineOrm/DoctrineOrmServiceProvider.php
@@ -123,6 +124,7 @@ class DoctrineORMServiceProvider implements ServiceProviderInterface {
                         $console->getHelperSet()->set(new EntityManagerHelper($em), "em");
                         $console->getHelperSet()->set(new ConnectionHelper($em->getConnection()), "db");
                         ConsoleRunner::addCommands($app["console"]);
+                        $console->add(new ImportMappingDoctrineCommand);
                     }
                 });
     }
