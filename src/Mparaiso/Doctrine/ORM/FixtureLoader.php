@@ -92,3 +92,63 @@ class FixtureLoader {
     }
 
 }
+
+
+
+/*
+
+## fixture example :
+## YAML Template.
+ 
+fixtures:
+        
+  - entity: Entity\Rdv\Rsvp
+    name: simon
+    fields:
+      attendeeName : simon
+      
+  - entity: Entity\Rdv\Rsvp
+    name: jacob
+    fields:
+      attendeeName: jacob
+      
+
+  - entity: Entity\Rdv\Dinner
+    name: 'Italian dinner'
+    fields:
+      country: France
+      latitude: 1
+      longitude: 2
+      contactPhone: 911
+      address: Paris
+      description: Italian Food
+      title: Let's eat italian
+      hostedBy: me
+      eventDate:  { datetime: 2010-10-20 } # a DateTimeObject
+      rsvps : [ jacob ] # an array collection , reference to the fixture named jacob
+  
+  - entity: Entity\Rdv\Dinner
+    name: 'German dinner'
+    fields:
+      country: Germany
+      latitude: 10
+      longitude: 23
+      contactPhone: 911-343-333
+      address: Berlin
+      description: Sausages
+      title: Kraut party
+      hostedBy: Von Brohm
+      eventDate: { datetime: 2013-10-20 }
+      rsvps: [ simon ]
+      
+  - entity: Entity\Rdv\Rsvp
+    name: jean
+    fields:
+      attendeeName: jean
+      dinner: %German dinner% # a reference to another fixture name , surrounded by quotes
+
+
+    
+    
+    
+    */

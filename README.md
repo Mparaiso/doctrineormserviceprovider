@@ -41,3 +41,73 @@ Services :
 
 + orm.em : EntityManager
 + orm.manager_registry  : Manager registry
+
+## FEATURES
+
+### FixtureLoader
+
+load  fixtures from a yaml file
+
+#### Usage
+
+given the following yaml file : 
+
+
+/*
+```yaml
+
+## fixture example :
+
+# !!!! all references must be declared BEFORE used !!!!!
+ 
+# the root node
+fixtures: 
+  # a fixture      
+  - entity: Entity\Rdv\Rsvp 
+    # the class
+    name: jacob
+    # the fixture reference name (optional)
+    fields:
+      # the fixture properties
+      attendeeName: jacob
+      
+
+  - entity: Entity\Rdv\Dinner
+    name: 'German dinner'
+    fields:
+      country: Germany
+      latitude: 10
+      longitude: 23
+      contactPhone: 911-343-333
+      address: Berlin
+      description: Sausages
+      title: Kraut party
+      hostedBy: Von Brohm
+      eventDate: { datetime: 2013-10-20 }
+      # will be parsed as a DateTime object
+      rsvps: [ jacob ]
+      # will be parsed as an ArrayCollection , fixtures are references by their names
+      # references must be declared BEFORE they are USED !!!!
+
+  - entity: Entity\Rdv\Rsvp
+    name: jean
+    fields:
+      attendeeName: jean
+      dinner: %German dinner% 
+      # a reference to another fixture  , with its name surrounded by quotes
+```
+
+```php
+        $em = app['orm.em'] // given a EntityManager
+        $loader = new Mparaiso\Doctrine\ORM\FixtureLoader(__DIR__ . '/fixtures/dinners.yml');
+        // get entities from fixtures
+        $entities = $loader->parse();
+        // persist fixtures
+        $loader->persistFixtures($em);
+        // remove fixtures
+        $loader->removeFixtures($em);
+```
+    
+    
+    
+ 
