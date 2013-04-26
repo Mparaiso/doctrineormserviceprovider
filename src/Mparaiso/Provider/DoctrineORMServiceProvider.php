@@ -102,7 +102,7 @@ class DoctrineORMServiceProvider implements ServiceProviderInterface
             if (isset($app["orm.logger"])) {
                 $config->setSQLLogger($app["orm.logger"]);
             }
-            $config->addCustomDatetimeFunction("DATE", '\Mparaiso\Doctrine\ORM\Function\Date');
+            $config->addCustomDatetimeFunction("DATE", 'Mparaiso\Doctrine\ORM\Functions\Date');
             return $config;
         });
         /**
