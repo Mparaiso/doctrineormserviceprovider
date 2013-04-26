@@ -44,6 +44,10 @@ Services :
 
 ## FEATURES
 
+### Date Function
+
+exemple : `select j from Job j where j.createdAt = date("2008-12-26")`
+
 ### FixtureLoader
 
 load  fixtures from a yaml file
