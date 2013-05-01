@@ -3,6 +3,8 @@
 namespace Mparaiso\Provider;
 
 use Silex\ServiceProviderInterface;
+use Mparaiso\Doctrine\ORM\Command\DeleteEntityDataCommand;
+
 use Symfony\Component\Security\Core\Validator\Constraints\UserPasswordValidator;
 use Exception;
 use Mparaiso\Doctrine\ORM\DoctrineManagerRegistry;
@@ -141,6 +143,7 @@ class DoctrineORMServiceProvider implements ServiceProviderInterface
                 ConsoleRunner::addCommands($app["console"]);
                 $console->add(new ImportMappingDoctrineCommand);
                 $console->add(new LoadFixturesCommand);
+                $console->add(new DeleteEntityDataCommand);
             }
         });
     }
