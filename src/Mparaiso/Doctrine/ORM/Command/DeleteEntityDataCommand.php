@@ -17,7 +17,7 @@ class DeleteEntityDataCommand extends Command
     {
         parent::configure();
         $this->setName("doctrine:delete-managed-datas")
-            ->addOption("filter", "f", InputOption::VALUE_REQUIRED|InputOption::VALUE_IS_ARRAY, "filter by entity name", array())
+            ->addOption("filter", "f", InputOption::VALUE_REQUIRED | InputOption::VALUE_IS_ARRAY, "filter by entity name", array())
             ->setDescription('Remove all managed entity datas from the database');
     }
 
