@@ -54,7 +54,7 @@ class DoctrineORMServiceProvider implements ServiceProviderInterface
                 /** FR : @note @silex utiliser les contraintes de validation de classe pour Doctrine * */
                 return new PimpleConstraintValidatorFactory($app, array(
                     /** FR : key = le nom du service de validation dans la classe de contrainte , value = le nom du service silex content le validator correspondant **/
-                    "validator.unique_entity"          => "validator.unique_entity",
+                    "doctrine.orm.validator.unique"          => "validator.unique_entity",
                     'security.validator.user_password' => "security.validator.user_password"
                 ));
             });
