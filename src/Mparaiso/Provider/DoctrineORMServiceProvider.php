@@ -84,31 +84,6 @@ class DoctrineORMServiceProvider implements ServiceProviderInterface
 
     public function register(Application $app)
     {
-        $app['security.validator.user_password'] = function ($app) {
-            return new UserPasswordValidator(
-                $app["security"], $app['security.encoder_factory']);
-        };
-
-    }
-
-    function getDriver($type, array $paths, Configuration $config)
-    {
-        $driver = NULL;
-        switch ($type) {
-            case 'yaml':
-        $a = $app['validator.validator_service_ids'];
-        $a["doctrine.orm.validator.unique"] = "validator.unique_entity";
-        $a["security.validator.user_password"] = "security.validator.user_password";
-        $app['validator.validator_service_ids'] = $a;
-
-        $app["validator.unique_entity"] = function ($app) {
-            return new UniqueEntityValidator($app["orm.manager_registry"]);
-        };
-        $app['security.validator.user_password'] = function ($app) {
-            return new UserPasswordValidator(
-                $app["security"], $app['security.encoder_factory']);
-        };
-
         $self = $this;
         $app["orm.proxy_dir"] = NULL;
         $app["orm.cache"] = NULL;
