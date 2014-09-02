@@ -6,7 +6,6 @@ use Silex\ServiceProviderInterface;
 use Symfony\Component\Security\Core\Validator\Constraints\UserPasswordValidator;
 use Exception;
 use Mparaiso\Doctrine\ORM\DoctrineManagerRegistry;
-use Mparaiso\Doctrine\ORM\PimpleConstraintValidatorFactory;
 use Doctrine\ORM\Configuration;
 use Doctrine\ORM\Tools\Console\ConsoleRunner;
 use Doctrine\DBAL\Tools\Console\Helper\ConnectionHelper;
