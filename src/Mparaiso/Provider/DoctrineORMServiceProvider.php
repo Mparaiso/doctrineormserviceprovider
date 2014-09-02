@@ -3,8 +3,6 @@
 namespace Mparaiso\Provider;
 
 use Silex\ServiceProviderInterface;
-use Mparaiso\Doctrine\ORM\Command\DeleteEntityDataCommand;
-
 use Symfony\Component\Security\Core\Validator\Constraints\UserPasswordValidator;
 use Exception;
 use Mparaiso\Doctrine\ORM\DoctrineManagerRegistry;
@@ -48,24 +46,24 @@ class DoctrineORMServiceProvider implements ServiceProviderInterface
                     }
                 ));
         }
-        /* intégration des contraintes de validation */
-        if (isset($app["validator.validator_factory"])) {
-            $app['validator.validator_factory'] = $app->share(function ($app) {
-                /** FR : @note @silex utiliser les contraintes de validation de classe pour Doctrine * */
-                return new PimpleConstraintValidatorFactory($app, array(
-                    /** FR : key = le nom du service de validation dans la classe de contrainte , value = le nom du service silex content le validator correspondant **/
-                    "validator.unique_entity"          => "validator.unique_entity",
-                    'security.validator.user_password' => "security.validator.user_password"
-                ));
-            });
-            $app["validator.unique_entity"] = function ($app) {
-                return new UniqueEntityValidator($app["orm.manager_registry"]);
-            };
-            $app['security.validator.user_password'] = function ($app) {
-                return new UserPasswordValidator(
-                    $app["security"], $app['security.encoder_factory']);
-            };
+
+        /* validator services  */
+        if (!$app['validator.validator_service_ids']) {
+            $app['validator.validator_service_ids'] = array();
         }
+        $a = $app['validator.validator_service_ids'];
+        $a["doctrine.orm.validator.unique"] = "validator.unique_entity";
+        $a["security.validator.user_password"] = "security.validator.user_password";
+        $app['validator.validator_service_ids'] = $a;
+
+        $app["validator.unique_entity"] = function ($app) {
+            return new UniqueEntityValidator($app["orm.manager_registry"]);
+        };
+        $app['security.validator.user_password'] = function ($app) {
+            return new UserPasswordValidator(
+                $app["security"], $app['security.encoder_factory']);
+        };
+
     }
 
     function getDriver($type, array $paths, Configuration $config)
@@ -143,7 +141,6 @@ class DoctrineORMServiceProvider implements ServiceProviderInterface
                 ConsoleRunner::addCommands($app["console"]);
                 $console->add(new ImportMappingDoctrineCommand);
                 $console->add(new LoadFixturesCommand);
-                $console->add(new DeleteEntityDataCommand);
             }
         });
     }

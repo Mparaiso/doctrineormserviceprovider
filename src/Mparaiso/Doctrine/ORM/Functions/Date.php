@@ -12,13 +12,14 @@ use Doctrine\ORM\Query\AST\Functions\FunctionNode;
 class Date extends FunctionNode
 {
     public $date;
+    public $modifier;
 
     /**
      * @override
      */
     public function getSql(\Doctrine\ORM\Query\SqlWalker $sqlWalker)
     {
-        if (NULL != $this->modifier) {
+        if (NULL !== $this->modifier) {
             return "DATE(" . $this->date->dispatch($sqlWalker) . "," . $this->modifier->dispatch($sqlWalker) . ")";
         }
         return "DATE(" . $this->date->dispatch($sqlWalker) . ")";
@@ -34,11 +35,11 @@ class Date extends FunctionNode
         $parser->match(Lexer::T_IDENTIFIER);
         $parser->match(Lexer::T_OPEN_PARENTHESIS);
 
-        $this->date = $parser->ArithmeticPrimary();
+        $this->date = $parser->Literal();
 
         if (Lexer::T_COMMA === $lexer->lookahead['type']) {
             $parser->match(Lexer::T_COMMA);
-            $this->modifier = $parser->ArithmeticPrimary();
+            $this->modifier = $parser->Literal();
         }
 
         $parser->match(Lexer::T_CLOSE_PARENTHESIS);
