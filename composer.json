@@ -17,7 +17,8 @@
   ],
   "require": {
     "php": ">=5.3.3",
-    "doctrine/orm": "2.3.*",
+    "doctrine/orm": "2.*",
+    "symfony/doctrine-bridge":"2.*",
     "mparaiso/consoleserviceprovider":"*@dev",
     "silex/silex":"*@dev"
   },
