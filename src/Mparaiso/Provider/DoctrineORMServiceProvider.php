@@ -10,18 +10,12 @@ use Doctrine\ORM\Configuration;
 use Doctrine\ORM\Tools\Console\ConsoleRunner;
 use Doctrine\DBAL\Tools\Console\Helper\ConnectionHelper;
 use Doctrine\ORM\Tools\Console\Helper\EntityManagerHelper;
-
-//use Doctrine\ORM\Mapping\Driver\AnnotationDriver;
 use Doctrine\ORM\Mapping\Driver\XmlDriver;
 use Doctrine\ORM\Mapping\Driver\YamlDriver;
-
-//use Symfony\Component\Console\Application as ConsoleApplication;
 use Doctrine\Common\Persistence\Mapping\Driver\MappingDriverChain;
 use Silex\Application;
 use Doctrine\ORM\Tools\Setup;
 use Doctrine\ORM\EntityManager;
-
-//use Mparaiso\Provider\ConsoleServiceProvider;
 use Symfony\Bridge\Doctrine\Form\DoctrineOrmExtension;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntityValidator;
 use Mparaiso\Doctrine\ORM\Command\ImportMappingDoctrineCommand;
@@ -30,43 +24,9 @@ use Mparaiso\Doctrine\ORM\Command\LoadFixturesCommand;
 /**
  * @see https://github.com/mpmedia/dflydev-doctrine-orm-service-provider/blob/master/src/Dflydev/Pimple/Provider/DoctrineOrm/DoctrineOrmServiceProvider.php
  */
-class DoctrineORMServiceProvider implements ServiceProviderInterface
-{
+class DoctrineORMServiceProvider implements ServiceProviderInterface {
 
-    public function boot(Application $app)
-    {
-        /* intégration des extensions de formulaire doctrine */
-        if (isset($app["form.extensions"])) {
-            $app["form.extensions"] = $app->share(
-            #@note @silex utiliser les extensions de formulaire de doctrine
-                $app->extend("form.extensions", function ($extensions, $app) {
-                        $extensions[] = new DoctrineOrmExtension($app["orm.manager_registry"]);
-                        return $extensions;
-                    }
-                ));
-        }
-
-        /* validator services  */
-        if (!$app['validator.validator_service_ids']) {
-            $app['validator.validator_service_ids'] = array();
-        }
-        $a = $app['validator.validator_service_ids'];
-        $a["doctrine.orm.validator.unique"] = "validator.unique_entity";
-        $a["security.validator.user_password"] = "security.validator.user_password";
-        $app['validator.validator_service_ids'] = $a;
-
-        $app["validator.unique_entity"] = function ($app) {
-            return new UniqueEntityValidator($app["orm.manager_registry"]);
-        };
-        $app['security.validator.user_password'] = function ($app) {
-            return new UserPasswordValidator(
-                $app["security"], $app['security.encoder_factory']);
-        };
-
-    }
-
-    function getDriver($type, array $paths, Configuration $config)
-    {
+    function getDriver($type, array $paths, Configuration $config) {
         $driver = NULL;
         switch ($type) {
             case 'yaml':
@@ -81,8 +41,7 @@ class DoctrineORMServiceProvider implements ServiceProviderInterface
         return $driver;
     }
 
-    public function register(Application $app)
-    {
+    public function register(Application $app) {
         $self = $this;
         $app["orm.proxy_dir"] = NULL;
         $app["orm.cache"] = NULL;
@@ -142,6 +101,36 @@ class DoctrineORMServiceProvider implements ServiceProviderInterface
                 $console->add(new LoadFixturesCommand);
             }
         });
+    }
+
+    public function boot(Application $app) {
+        /* intégration des extensions de formulaire doctrine */
+        if (isset($app["form.extensions"])) {
+            $app["form.extensions"] = $app->share(
+                    #@note @silex utiliser les extensions de formulaire de doctrine
+                    $app->extend("form.extensions", function ($extensions, $app) {
+                        $extensions[] = new DoctrineOrmExtension($app["orm.manager_registry"]);
+                        return $extensions;
+                    }
+            ));
+        }
+
+        /* validator services  */
+        if (!$app->offsetExists('validator.validator_service_ids')) {
+            $app['validator.validator_service_ids'] = array();
+        }
+        $a = $app['validator.validator_service_ids'];
+        $a["doctrine.orm.validator.unique"] = "validator.unique_entity";
+        $a["security.validator.user_password"] = "security.validator.user_password";
+        $app['validator.validator_service_ids'] = $a;
+
+        $app["validator.unique_entity"] = function ($app) {
+            return new UniqueEntityValidator($app["orm.manager_registry"]);
+        };
+        $app['security.validator.user_password'] = function ($app) {
+            return new UserPasswordValidator(
+                    $app["security"], $app['security.encoder_factory']);
+        };
     }
 
 }
